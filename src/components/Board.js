@@ -1,17 +1,11 @@
 import Button from "./Button";
 
-const Board = () => {
+const Board = ({squares, onClick}) => {
   return (
     <div className="board">
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
-        <Button/>
+        {squares.map((square, i) => (
+			    <Button key={i} value={square} onClick={() => onClick(i)} />
+		    ))}
     </div>
   )
 }

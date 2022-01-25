@@ -37,12 +37,31 @@ grid-column: 2/3;
     padding-top: 15vh;
 }
 
-.button{
+button{
     padding: 0%;
     margin: 0;
+    font-size: 70px;
 }
 
 .btn{
     width: 100px;
     height: 100px;
+}
+
+p{
+    text-align: center;
+    font-family: "Dongle", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.reset {
+    width: 100px; 
+    height: 50px;
+    font-size: 30px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
